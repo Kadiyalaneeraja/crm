@@ -44,7 +44,7 @@ pipeline {
         }
         stage("Prod deploy") {
             when{
-                branch 'main'
+                branch 'master'
             }
             steps {
                 echo "Prod deploy..."
